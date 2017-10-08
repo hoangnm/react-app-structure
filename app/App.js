@@ -1,10 +1,10 @@
 import React from 'react';
+import VisibleTodoList from './containers/TodoList.container';
 
-export default class App extends React.Component {
-  render() {
-    return (
-     <div style={{textAlign: 'center'}}>
-        <h1>Hello World</h1>
-      </div>);
-  }
-}
+const App = () => (
+  <div>
+    <VisibleTodoList />
+  </div>
+);
+
+export default App;

@@ -1,1 +1,5 @@
-// folder contains reducers
+import todo from './todo';
+
+export default {
+  todo
+};
