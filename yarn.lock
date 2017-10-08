@@ -5609,6 +5609,10 @@ type-is@~1.6.15:
     media-typer "0.3.0"
     mime-types "~2.1.15"
 
+type-to-reducer@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/type-to-reducer/-/type-to-reducer-1.0.4.tgz#83c4168c33b41edd7d6a3ce68f9b0eb5b65f9c42"
+
 ua-parser-js@^0.7.9:
   version "0.7.14"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.14.tgz#110d53fa4c3f326c121292bbeac904d2e03387ca"

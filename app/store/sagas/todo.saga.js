@@ -8,6 +8,7 @@ import api from '../../services/api';
 
 export function* getTodos() {
   try {
+    yield put(actions.getTodosPending());
     const result = yield call(api.getTodos);
     yield put(actions.getTodosSuccess({todos: result.data}));
   } catch (error) {
