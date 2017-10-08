@@ -1,10 +1,19 @@
 import React from 'react';
-import VisibleTodoList from './containers/TodoList.container';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect
+} from 'react-router-dom';
+
+import TodoList from './containers/TodoList.container';
 
 const App = () => (
-  <div>
-    <VisibleTodoList />
-  </div>
+  <Router>
+    <div>
+      <Route exact path="/" render={() => <Redirect to={'/todos'} />} />
+      <Route path="/todos" component={TodoList} />
+    </div>
+  </Router>
 );
 
 export default App;

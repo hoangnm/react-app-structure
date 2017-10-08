@@ -9,6 +9,10 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: ['babel-polyfill', './app/index.js'],
+  devtool: 'inline-source-map',
+  devServer: {
+    historyApiFallback: true
+  },
   output: {
     path: path.resolve('dist'),
     filename: 'index_bundle.js'

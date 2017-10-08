@@ -4,6 +4,7 @@
 ## Table of Contents
 
 ## Install
+Install yarn and run
 ``` bash
 yarn
 ```
@@ -17,7 +18,11 @@ yarn start
 ```
 
 ## Developer Guide
-
+1. React
+2. React-Router
+3. Redux
+4. Saga
+5. Reselect
 
 ### Linting and Code Formatting Conventions
 
