@@ -18,11 +18,11 @@ yarn start
 ```
 
 ## Developer Guide
-1. React
-2. React-Router
-3. Redux
-4. Saga
-5. Reselect
+1. React: https://reactjs.org/
+2. React-Router: https://reacttraining.com/react-router/web/example/basic
+3. Redux: http://redux.js.org/
+4. Saga: https://github.com/redux-saga/redux-saga
+5. Reselect: https://github.com/reactjs/reselect
 
 ### Linting and Code Formatting Conventions
 
@@ -35,6 +35,7 @@ yarn start
 #### Reactotron
 
 ### Storybook
+https://storybook.js.org/basics/quick-start-guide/
 
 ### Blueprints
 
