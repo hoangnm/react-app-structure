@@ -3,6 +3,6 @@ import todo from './todo.saga';
 
 export default function* rootSaga() {
   yield all([
-    ...todo
+    ...todo,
   ]);
-};
+}

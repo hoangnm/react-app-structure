@@ -8,7 +8,7 @@ const GET_TODOS_PENDING = 'TODO/GET_TODOS_PENDING';
 export const types = {
   GET_TODOS,
   GET_TODOS_SUCCESS,
-  GET_TODOS_PENDING
+  GET_TODOS_PENDING,
 };
 
 const getTodos = createAction(GET_TODOS);
@@ -18,30 +18,26 @@ const getTodosPending = createAction(GET_TODOS_PENDING);
 export const actions = {
   getTodos,
   getTodosSuccess,
-  getTodosPending
+  getTodosPending,
 };
 
 const initialState = {
   todos: [],
-  loading: false
+  loading: false,
 };
 
 const todo = typeToReducer({
   [GET_TODOS]: {
-    PENDING: (state, action) => {
-      return {
-        ...state,
-        loading: true
-      };
-    },
-    SUCCESS: (state, action) => {
-      return {
-        ...state,
-        loading: false,
-        todos: action.payload.todos
-      };
-    }
-  }
+    PENDING: state => ({
+      ...state,
+      loading: true,
+    }),
+    SUCCESS: (state, action) => ({
+      ...state,
+      loading: false,
+      todos: action.payload.todos,
+    }),
+  },
 }, initialState);
 
 export default todo;

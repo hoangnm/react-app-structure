@@ -1,18 +1,18 @@
 const getTodos = () => {
   const todos = [
     { id: 1, text: 'Setup', completed: true },
-    { id: 2, text: 'Selector', completed: false }
+    { id: 2, text: 'Selector', completed: false },
   ];
 
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
-        data: todos
+        data: todos,
       });
     }, 3000);
   });
 };
 
 export default {
-  getTodos
+  getTodos,
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Todo from './Todo.component';
 
-const TodoList = ({ todos, onTodoClick }) => (
+const TodoList = ({ todos }) => (
   <ul>
     {todos.map(todo => (
       <Todo key={todo.id} {...todo} />
@@ -11,12 +11,10 @@ const TodoList = ({ todos, onTodoClick }) => (
 );
 
 TodoList.propTypes = {
-  todos: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      text: PropTypes.string.isRequired
-    })
-  ).isRequired
+  todos: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    text: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 export default TodoList;

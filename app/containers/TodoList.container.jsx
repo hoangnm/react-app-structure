@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { actions } from '../store/reducers/todo.reducer';
 import { getVisibleTodos } from '../store/selectors/todo.selector';
 import TodoList from '../components/TodoList.component';
 
 class TodoListContainer extends Component {
-
   componentWillMount() {
     this.props.getTodos();
   }
@@ -21,18 +21,25 @@ class TodoListContainer extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    todos: getVisibleTodos(state),
-    loading: state.todo.loading
-  };
+TodoListContainer.propTypes = {
+  todos: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    text: PropTypes.string.isRequired,
+  })).isRequired,
+  loading: PropTypes.bool.isRequired,
+  getTodos: PropTypes.func.isRequired,
 };
 
+const mapStateToProps = state => ({
+  todos: getVisibleTodos(state),
+  loading: state.todo.loading,
+});
+
 const mapDispatchToProps = {
-  getTodos: actions.getTodos
+  getTodos: actions.getTodos,
 };
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(TodoListContainer);
