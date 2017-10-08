@@ -11,16 +11,20 @@ class TodoListContainer extends Component {
   }
 
   render() {
-    const { todos } = this.props;
+    const { todos, loading } = this.props;
     return (
-      <TodoList todos={todos} />
+      <div>
+        {loading && <div>Fetching data</div>}
+        <TodoList todos={todos} />
+      </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    todos: getVisibleTodos(state)
+    todos: getVisibleTodos(state),
+    loading: state.todo.loading
   };
 };
 
