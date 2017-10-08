@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { actions } from '../store/reducers/todo';
+import { actions } from '../store/reducers/todo.reducer';
+import { getVisibleTodos } from '../store/selectors/todo.selector';
 import TodoList from '../components/TodoList.component';
 
 class TodoListContainer extends Component {
@@ -19,7 +20,7 @@ class TodoListContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    todos: state.todo.todos
+    todos: getVisibleTodos(state)
   };
 };
 

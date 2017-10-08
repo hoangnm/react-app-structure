@@ -19,7 +19,7 @@ const initialState = {
 const todo = handleActions({
   [GET_TODOS]: (state, action) => {
     return {
-      todos: [{ id: 1, text: 'Setup' }]
+      todos: [{ id: 1, text: 'Setup', completed: true }, { id: 2, text: 'Selector', completed: false }]
     };
   }
 }, initialState);
