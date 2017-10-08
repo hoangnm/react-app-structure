@@ -25,17 +25,18 @@ yarn start
 5. Reselect: https://github.com/reactjs/reselect
 
 ### Linting and Code Formatting Conventions
-
+ESLint with [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
 ### Inspecting and Debugging
 
 #### Chrome Debugger
-
+Use extension for redux, https://github.com/zalmoxisus/redux-devtools-extension.
 
 #### Reactotron
+https://github.com/infinitered/reactotron.
 
 ### Storybook
-https://storybook.js.org/basics/quick-start-guide/
+https://storybook.js.org/basics/quick-start-guide/.
 
 ### Blueprints
 
