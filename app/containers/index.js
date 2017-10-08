@@ -1,0 +1,1 @@
+// folder contains smart components
