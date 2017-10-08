@@ -2,6 +2,14 @@
 > React Web app.
 
 ## Table of Contents
+- [Install](#install)
+- [Usage](#usage)
+- [Developer Guide](#developer-guide)
+  - [Linting and Code Formatting Conventions](#linting-and-code-formatting-conventions)
+  - [Inspecting and Debugging](#inspecting-and-debugging)
+- [Developer Tools](#developer-tools)
+  - [Storybook](#storybook)
+  - [Blueprints](#blueprints)
 
 ## Install
 Install yarn and run
@@ -35,6 +43,7 @@ Use extension for redux, https://github.com/zalmoxisus/redux-devtools-extension.
 #### Reactotron
 https://github.com/infinitered/reactotron.
 
+## Developer Tools
 ### Storybook
 https://storybook.js.org/basics/quick-start-guide/.
 
