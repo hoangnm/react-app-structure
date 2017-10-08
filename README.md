@@ -28,7 +28,7 @@ yarn start
 ESLint with [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
 ### Inspecting and Debugging
-
+We can use two tools:
 #### Chrome Debugger
 Use extension for redux, https://github.com/zalmoxisus/redux-devtools-extension.
 

@@ -19,10 +19,13 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
-    "redux-devtools-extension": "^2.13.2",
     "redux-saga": "^0.15.6",
     "reselect": "^3.0.1",
-    "type-to-reducer": "^1.0.4"
+    "type-to-reducer": "^1.0.4",
+    "reactotron-react-js": "^1.12.2",
+    "reactotron-redux": "^1.12.2",
+    "reactotron-redux-saga": "^1.12.2",
+    "redux-devtools-extension": "^2.13.2"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
