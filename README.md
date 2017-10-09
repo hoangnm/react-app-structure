@@ -82,3 +82,6 @@ redux g dumb <name>
 * Reducers (**store/reducers** folder): Receive actions (from sagas or containers) and return new state.
 * Sagas (**store/sagas** folder): Listen actions from containers, handle side-effect (example: call remote api) and dispatch actions back to reducers.
 * Selectors with **Reselect** (**store/selectors** folder): compute derived data from state, allowing Redux to store the minimal possible state (from **Reselect** documentation) and memorize data, avoid containers to re-render needlessly.
+
+## TODO
+[] css structure.
