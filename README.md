@@ -75,3 +75,10 @@ redux g dumb <name>
 * duck-modular-redux: https://github.com/erikras/ducks-modular-redux
 * smart vs dumb components: https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
 ## App Architecture
+<img src="diagram-redux-saga.svg" width="100%" height="400">
+
+* Container components (**containers** folder): connect with redux store and dispatch actions to sagas or reducers.
+* Dumb components (**components** folder): mainly describe UI, base on props, which are passed from container.
+* Reducers (**store/reducers** folder): Receive actions (from sagas or containers) and return new state.
+* Sagas (**store/sagas** folder): Listen actions from containers, handle side-effect (example: call remote api) and dispatch actions back to reducers.
+* Selectors with **Reselect** (**store/selectors** folder): compute derived data from state, allowing Redux to store the minimal possible state (from **Reselect** documentation) and memorize data, avoid containers to re-render needlessly.
