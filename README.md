@@ -85,3 +85,5 @@ redux g dumb <name>
 
 ## TODO
 - [ ] css structure.
+- [ ] update storybook.
+- [ ] flow type checking.
