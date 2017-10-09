@@ -45,7 +45,7 @@ https://github.com/infinitered/reactotron.
 
 ## Developer Tools
 ### Storybook
-https://storybook.js.org/basics/quick-start-guide/.
+Helps to build components independently: https://storybook.js.org/basics/quick-start-guide/.
 
 ### Blueprints
 
