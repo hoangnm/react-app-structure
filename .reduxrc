@@ -1,1 +1,8 @@
-{"sourceBase":"app","testBase":"test","smartPath":"containers","dumbPath":"components","fileCasing":"default"}
+{
+  "sourceBase":"app",
+  "duckPath": "store/reducers",
+  "testBase":"app",
+  "smartPath":"containers",
+  "dumbPath":"components",
+  "fileCasing":"default"
+}

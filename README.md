@@ -54,9 +54,24 @@ Generate a new dumb component / HOC Component (that has access to state)/ redux 
 ```bash
 npm install -g redux-cli
 ```
+After installing, we can:
+
+* generate duck file
+```bash
+redux g duck <name>
+```
+* generate container (smart) component
+``` bash
+redux g smart <name>
+```
+
+* generate dumb component
+```bash
+redux g dumb <name>
+```
+
 
 ## References
-
-
-## App Architecture & This README
-
+* duck-modular-redux: https://github.com/erikras/ducks-modular-redux
+* smart vs dumb components: https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
+## App Architecture

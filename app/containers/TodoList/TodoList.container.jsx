@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { actions } from '../store/reducers/todo.reducer';
-import { getVisibleTodos } from '../store/selectors/todo.selector';
-import TodoList from '../components/TodoList.component';
+import { actions } from '../../store/reducers/todo/todo.reducer';
+import { getVisibleTodos } from '../../store/selectors/todo.selector';
+import TodoList from '../../components/TodoList.component';
 
 class TodoListContainer extends Component {
   componentWillMount() {

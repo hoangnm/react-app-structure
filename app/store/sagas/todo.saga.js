@@ -1,5 +1,5 @@
 import { takeEvery, spawn, call, put } from 'redux-saga/effects';
-import { types, actions } from '../reducers/todo.reducer';
+import { types, actions } from '../reducers/todo/todo.reducer';
 import api from '../../services/api';
 
 // ------------------------------------

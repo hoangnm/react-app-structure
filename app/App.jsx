@@ -5,7 +5,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-import TodoList from './containers/TodoList.container';
+import TodoList from './containers/TodoList/TodoList.container';
 
 const App = () => (
   <Router>
