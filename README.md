@@ -84,4 +84,4 @@ redux g dumb <name>
 * Selectors with **Reselect** (**store/selectors** folder): compute derived data from state, allowing Redux to store the minimal possible state (from **Reselect** documentation) and memorize data, avoid containers to re-render needlessly.
 
 ## TODO
-[] css structure.
+- [ ] css structure.
