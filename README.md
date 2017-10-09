@@ -1,5 +1,5 @@
-# react-setup
-> React Web app.
+# react-app-structure
+> React web app structure.
 
 ## Table of Contents
 - [Install](#install)
