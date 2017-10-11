@@ -26,12 +26,12 @@ yarn start
 ```
 
 ## Developer Guide
-1. React: https://reactjs.org/
-2. React-Router: https://reacttraining.com/react-router/web/example/basic
-3. Redux: http://redux.js.org/
-4. Saga: https://github.com/redux-saga/redux-saga
-5. Reselect: https://github.com/reactjs/reselect
-
+1. React: https://reactjs.org/.
+2. React-Router: https://reacttraining.com/react-router/web/example/basic.
+3. Redux: http://redux.js.org/.
+4. Saga: https://github.com/redux-saga/redux-saga.
+5. Reselect: https://github.com/reactjs/reselect.
+6. CSS - Inline styles with https://github.com/Khan/aphrodite.
 ### Linting and Code Formatting Conventions
 ESLint with [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
@@ -84,6 +84,5 @@ redux g dumb <name>
 * Selectors with **Reselect** (**store/selectors** folder): compute derived data from state, allowing Redux to store the minimal possible state (from **Reselect** documentation) and memorize data, avoid containers to re-render needlessly.
 
 ## TODO
-- [ ] css structure.
 - [ ] update storybook.
 - [ ] flow type checking.

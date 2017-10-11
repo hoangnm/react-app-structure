@@ -1,7 +1,8 @@
 const getTodos = () => {
   const todos = [
     { id: 1, text: 'Setup', completed: true },
-    { id: 2, text: 'Selector', completed: false },
+    { id: 2, text: 'selector', completed: false },
+    { id: 2, text: 'aphrodite', completed: false },
   ];
 
   return new Promise((resolve) => {

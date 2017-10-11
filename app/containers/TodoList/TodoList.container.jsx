@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { css } from 'aphrodite';
 import { actions } from '../../store/reducers/todo/todo.reducer';
 import { getVisibleTodos } from '../../store/selectors/todo.selector';
 import TodoList from '../../components/TodoList.component';
+import styles from './TodoList.container.styles';
 
 class TodoListContainer extends Component {
   componentWillMount() {
@@ -13,7 +15,7 @@ class TodoListContainer extends Component {
   render() {
     const { todos, loading } = this.props;
     return (
-      <div>
+      <div className={css(styles.container)}>
         {loading && <div>Fetching data</div>}
         <TodoList todos={todos} />
       </div>
