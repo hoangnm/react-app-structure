@@ -19,6 +19,8 @@ jobs:
       - run:
           name: Run test
           command: yarn jest --coverage
+      - store_artifacts:
+          path: /coverage
       - run:
           name: Post to coveralls
           command: yarn run coveralls
