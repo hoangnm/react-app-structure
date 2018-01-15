@@ -9,6 +9,13 @@ jobs:
           name: Yarn Install
           command: yarn install --cache-folder ~/.cache/yarn
   test:
-    post:
-      yarn jest --coverage
-      coveralls
+    docker:
+      - image: circleci/node:7.10
+    steps:
+      - checkout
+      - run:
+          name: Yarn Install
+          command: yarn install --cache-folder ~/.cache/yarn
+      - run:
+          name: Run test
+          command: yarn jest --coverage && coveralls
