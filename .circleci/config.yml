@@ -18,7 +18,7 @@ jobs:
           command: yarn install --cache-folder ~/.cache/yarn
       - run:
           name: Run test
-          command: yarn jest --coverage && coveralls
+          command: yarn jest --coverage && yarn run coveralls
 
 workflows:
   version: 2
