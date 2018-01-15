@@ -74,6 +74,7 @@
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",
       "<rootDir>/blueprints/"
-    ]
+    ],
+    "coverageDirectory": "<rootDir>/coverage"
   }
 }
