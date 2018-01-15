@@ -8,4 +8,7 @@ jobs:
       - run:
           name: Yarn Install
           command: yarn install --cache-folder ~/.cache/yarn
-      - run: echo "hello world"
+      - test:
+          post:
+            yarn jest --coverage
+            coveralls

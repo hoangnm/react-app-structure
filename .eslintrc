@@ -1,10 +1,14 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "react"
+    "react",
+    "jest"
   ],
   "extends": "airbnb",
   "globals": {
-    "document": true
+    "document": true,
+    "describe": true,
+    "expect": true,
+    "test": true
   }
 }
