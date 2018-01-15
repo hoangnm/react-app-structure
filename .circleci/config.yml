@@ -18,7 +18,7 @@ jobs:
           command: yarn install --cache-folder ~/.cache/yarn
       - run:
           name: Run test
-          command: yarn jest --coverage
+          command: yarn run test:coverage
       - store_artifacts:
           path: coverage
           prefix: coverage

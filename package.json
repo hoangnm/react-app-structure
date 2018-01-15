@@ -9,6 +9,7 @@
     "build-storybook": "build-storybook",
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
+    "test:coverage": "yarn jest -- --coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "dependencies": {
