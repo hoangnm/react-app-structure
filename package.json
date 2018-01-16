@@ -70,7 +70,7 @@
     ],
     "coveragePathIgnorePatterns": [
       "(styles|story).js",
-      "tests/Setup.js"
+      "tests/setup.js"
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",
