@@ -9,8 +9,7 @@
     "build-storybook": "build-storybook",
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
-    "test:coverage": "yarn jest -- --coverage",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "test:coverage": "yarn jest -- --coverage"
   },
   "dependencies": {
     "aphrodite": "^1.2.4",
@@ -42,7 +41,6 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "coveralls": "^3.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.8.0",
