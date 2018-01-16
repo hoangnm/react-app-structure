@@ -1,6 +1,4 @@
 
-[![Coverage Status](https://coveralls.io/repos/github/hoangnm/react-app-structure/badge.svg?branch=circleci)](https://coveralls.io/github/hoangnm/react-app-structure?branch=circleci)
-
 # react-app-structure
 > React web app structure.
 
