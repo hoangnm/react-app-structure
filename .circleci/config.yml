@@ -15,8 +15,8 @@ jobs:
           path: coverage
           prefix: coverage
       - run:
-          name: Post to coveralls
-          command: yarn run coveralls
+          name: Post to codecov
+          command: bash <(curl -s https://codecov.io/bash)
 
 workflows:
   version: 2
